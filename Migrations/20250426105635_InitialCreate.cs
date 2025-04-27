@@ -50,7 +50,7 @@ namespace university_management.Migrations
                     StudentId = table.Column<int>(type: "integer", nullable: false),
                     CourseId = table.Column<int>(type: "integer", nullable: false),
                     EnrollmentDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    Grade = table.Column<int>(type: "integer", nullable: true)
+                    Grade = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {

@@ -12,7 +12,7 @@ using university_management.Data;
 namespace university_management.Migrations
 {
     [DbContext(typeof(UniversityContext))]
-    [Migration("20250426065727_InitialCreate")]
+    [Migration("20250426105635_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -59,7 +59,7 @@ namespace university_management.Migrations
                     b.Property<DateTime>("EnrollmentDate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<int?>("Grade")
+                    b.Property<int>("Grade")
                         .HasColumnType("integer");
 
                     b.Property<int>("StudentId")

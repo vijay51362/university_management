@@ -56,7 +56,7 @@ namespace university_management.Migrations
                     b.Property<DateTime>("EnrollmentDate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<int?>("Grade")
+                    b.Property<int>("Grade")
                         .HasColumnType("integer");
 
                     b.Property<int>("StudentId")

@@ -1,25 +1,22 @@
 {
-  "name": "University Management System",
-  "dockerFile": "Dockerfile",
-  "forwardPorts": [5000, 5001],
-  "customizations": {
-      "vscode": {
-          "extensions": [
-              "ms-dotnettools.csharp",
-              "ms-dotnettools.vscode-dotnet-runtime",
-              "ms-azuretools.vscode-docker",
-              "editorconfig.editorconfig"
-          ],
-          "settings": {
-              "dotnet.server.useOmnisharp": true
-          }
-      }
-  },
-  "postCreateCommand": "dotnet restore && dotnet tool restore",
-  "remoteUser": "vscode",
-  "features": {
-      "ghcr.io/devcontainers/features/dotnet:1": {
-          "version": "9.0"
-      }
-  }
+    "name": "University Management System",
+    "dockerFile": "Dockerfile",
+    "forwardPorts": [5000, 5001],
+    "remoteUser": "vscode",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-dotnettools.csharp",
+                "ms-dotnettools.vscode-dotnet-runtime",
+                "ms-azuretools.vscode-docker",
+                "editorconfig.editorconfig"
+            ]
+        }
+    },
+    "postCreateCommand": "dotnet restore && dotnet tool restore",
+    "features": {
+        "ghcr.io/devcontainers/features/dotnet:1": {
+            "version": "9.0"
+        }
+    }
 }
